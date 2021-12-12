@@ -1,0 +1,60 @@
+.imagen{
+    width: 50%;
+    height: 250px;
+}
+.contenedor{
+    height: 600px;
+    position: relative;
+}
+.contenedor > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.contenedor > h2{
+    color: white;
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    background: rgba(0,0,0,1);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    opacity: 0.7;
+    text-align: center;
+    border-radius: 0px 100px 100px 0px;
+    transition: 0.5s all;
+}
+.contenedor > h2:hover{
+    opacity: 1;
+}
+.producto{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.producto span{
+    font-size: 1.2em;
+}
+@media (max-width:500px) {
+    .letras-banner{
+        font-size: 1.6em;
+    }
+    .producto{
+        width: 95% !important;
+    }
+    .imagen{
+        width: 100%;
+    }
+}
+@media (max-width:280px) {
+    .imagen{
+        width: 200px;
+    }
+}
